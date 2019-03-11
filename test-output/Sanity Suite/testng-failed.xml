@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Sanity Suite]">
+  <parameter name="BaseURI" value="https://demo5218130.mockable.io"/>
+  <test thread-count="5" name="BookStore Api Testing(failed)">
+    <classes>
+      <class name="suites.bookstore.ApiTest">
+        <methods>
+          <include name="emptyStore"/>
+          <include name="beforeClass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- suites.bookstore.ApiTest -->
+    </classes>
+  </test> <!-- BookStore Api Testing(failed) -->
+</suite> <!-- Failed suite [Sanity Suite] -->

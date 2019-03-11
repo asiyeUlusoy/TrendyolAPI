@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+  <reporter-output>
+    <line>
+      <![CDATA[Test Started with runID= 4307745]]>
+    </line>
+    <line>
+      <![CDATA[Set Up completed 
+]]>
+    </line>
+    <line>
+      <![CDATA[Test Started= emptyStore]]>
+    </line>
+    <line>
+      <![CDATA[Service Response:]]>
+    </line>
+    <line>
+      <![CDATA[[]]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed= emptyStore
+]]>
+    </line>
+    <line>
+      <![CDATA[Test Started= requiredFieldTitle]]>
+    </line>
+    <line>
+      <![CDATA[Service Response:]]>
+    </line>
+    <line>
+      <![CDATA[{"id":0,"author":null,"title":null,"error":"title and author are required fields"}]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed= requiredFieldTitle
+]]>
+    </line>
+    <line>
+      <![CDATA[Test Started= requiredFieldAuthor]]>
+    </line>
+    <line>
+      <![CDATA[Service Response:]]>
+    </line>
+    <line>
+      <![CDATA[{"id":0,"author":null,"title":null,"error":"title and author are required fields"}]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed= requiredFieldAuthor
+]]>
+    </line>
+    <line>
+      <![CDATA[Test Started= emptyAuthorFields]]>
+    </line>
+    <line>
+      <![CDATA[Service Response:]]>
+    </line>
+    <line>
+      <![CDATA[{"id":0,"author":null,"title":null,"error":"title and author fields cannot be empty"}]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed= emptyAuthorFields
+]]>
+    </line>
+    <line>
+      <![CDATA[Test Started= emptyTitleFields]]>
+    </line>
+    <line>
+      <![CDATA[Service Response:]]>
+    </line>
+    <line>
+      <![CDATA[{"id":0,"author":null,"title":null,"error":"title and author fields cannot be empty"}]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed= emptyTitleFields
+]]>
+    </line>
+    <line>
+      <![CDATA[Test Started= readOnlyId]]>
+    </line>
+    <line>
+      <![CDATA[Service Response:]]>
+    </line>
+    <line>
+      <![CDATA[{"id":0,"author":null,"title":null,"error":"id field is readonly"}]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed= readOnlyId
+]]>
+    </line>
+    <line>
+      <![CDATA[Test Started= putbooksDuplicate]]>
+    </line>
+    <line>
+      <![CDATA[Service Response:]]>
+    </line>
+    <line>
+      <![CDATA[{"id":0,"author":null,"title":null,"error":"Another book with similar title and author already exists"}]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed= putbooksDuplicate
+]]>
+    </line>
+    <line>
+      <![CDATA[Test Started= getBookNotFound]]>
+    </line>
+    <line>
+      <![CDATA[Service Response:]]>
+    </line>
+    <line>
+      <![CDATA[{"id":0,"author":null,"title":null,"error":"the given id does not exist."}]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed= getBookNotFound
+]]>
+    </line>
+    <line>
+      <![CDATA[Test Started= getBookFound]]>
+    </line>
+    <line>
+      <![CDATA[Service Response:]]>
+    </line>
+    <line>
+      <![CDATA[{"id":59,"author":"Asiye Ulusoy","title":"DevOps is a lie"}]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed= getBookFound
+]]>
+    </line>
+  </reporter-output>
+  <suite name="BookStore Api Testing" duration-ms="4701" started-at="2019-03-10T18:37:57Z" finished-at="2019-03-10T18:38:02Z">
+    <groups>
+    </groups>
+    <test name="BookStore Api Testing" duration-ms="4701" started-at="2019-03-10T18:37:57Z" finished-at="2019-03-10T18:38:02Z">
+      <class name="suites.bookstore.ApiTest">
+        <test-method status="PASS" signature="beforeClass(org.testng.ITestContext)[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="beforeClass" is-config="true" duration-ms="394" started-at="2019-03-10T18:37:57Z" finished-at="2019-03-10T18:37:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@724bade8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Started with runID= 4307745]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="setUp" is-config="true" duration-ms="1399" started-at="2019-03-10T18:37:57Z" finished-at="2019-03-10T18:37:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Set Up completed 
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="emptyStore()[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="emptyStore" duration-ms="503" started-at="2019-03-10T18:37:59Z" finished-at="2019-03-10T18:37:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Service Response:]]>
+            </line>
+            <line>
+              <![CDATA[[]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- emptyStore -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-03-10T18:37:59Z" finished-at="2019-03-10T18:37:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void suites.bookstore.ApiTest.emptyStore()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Started= emptyStore]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="afterTest(java.lang.reflect.Method)[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="afterTest" is-config="true" duration-ms="1" started-at="2019-03-10T18:37:59Z" finished-at="2019-03-10T18:37:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void suites.bookstore.ApiTest.emptyStore()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Completed= emptyStore
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="beforeTest" is-config="true" duration-ms="1" started-at="2019-03-10T18:37:59Z" finished-at="2019-03-10T18:37:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void suites.bookstore.ApiTest.requiredFieldTitle() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Started= requiredFieldTitle]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="requiredFieldTitle()[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="requiredFieldTitle" duration-ms="423" started-at="2019-03-10T18:37:59Z" description="Check title field" finished-at="2019-03-10T18:38:00Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Service Response:]]>
+            </line>
+            <line>
+              <![CDATA[{"id":0,"author":null,"title":null,"error":"title and author are required fields"}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- requiredFieldTitle -->
+        <test-method status="PASS" signature="afterTest(java.lang.reflect.Method)[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-03-10T18:38:00Z" finished-at="2019-03-10T18:38:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void suites.bookstore.ApiTest.requiredFieldTitle() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Completed= requiredFieldTitle
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-03-10T18:38:00Z" finished-at="2019-03-10T18:38:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void suites.bookstore.ApiTest.requiredFieldAuthor()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Started= requiredFieldAuthor]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="requiredFieldAuthor()[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="requiredFieldAuthor" duration-ms="176" started-at="2019-03-10T18:38:00Z" description="Check author field" finished-at="2019-03-10T18:38:00Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Service Response:]]>
+            </line>
+            <line>
+              <![CDATA[{"id":0,"author":null,"title":null,"error":"title and author are required fields"}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- requiredFieldAuthor -->
+        <test-method status="PASS" signature="afterTest(java.lang.reflect.Method)[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="afterTest" is-config="true" duration-ms="1" started-at="2019-03-10T18:38:00Z" finished-at="2019-03-10T18:38:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void suites.bookstore.ApiTest.requiredFieldAuthor()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Completed= requiredFieldAuthor
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="beforeTest" is-config="true" duration-ms="1" started-at="2019-03-10T18:38:00Z" finished-at="2019-03-10T18:38:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void suites.bookstore.ApiTest.emptyAuthorFields()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Started= emptyAuthorFields]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="emptyAuthorFields()[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="emptyAuthorFields" duration-ms="178" started-at="2019-03-10T18:38:00Z" description="Check empty author field" finished-at="2019-03-10T18:38:00Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Service Response:]]>
+            </line>
+            <line>
+              <![CDATA[{"id":0,"author":null,"title":null,"error":"title and author fields cannot be empty"}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- emptyAuthorFields -->
+        <test-method status="PASS" signature="afterTest(java.lang.reflect.Method)[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-03-10T18:38:00Z" finished-at="2019-03-10T18:38:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void suites.bookstore.ApiTest.emptyAuthorFields()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Completed= emptyAuthorFields
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-03-10T18:38:00Z" finished-at="2019-03-10T18:38:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void suites.bookstore.ApiTest.emptyTitleFields()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Started= emptyTitleFields]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="emptyTitleFields()[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="emptyTitleFields" duration-ms="200" started-at="2019-03-10T18:38:00Z" description="Check empty title field" finished-at="2019-03-10T18:38:00Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Service Response:]]>
+            </line>
+            <line>
+              <![CDATA[{"id":0,"author":null,"title":null,"error":"title and author fields cannot be empty"}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- emptyTitleFields -->
+        <test-method status="PASS" signature="afterTest(java.lang.reflect.Method)[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="afterTest" is-config="true" duration-ms="1" started-at="2019-03-10T18:38:00Z" finished-at="2019-03-10T18:38:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void suites.bookstore.ApiTest.emptyTitleFields()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Completed= emptyTitleFields
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-03-10T18:38:00Z" finished-at="2019-03-10T18:38:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void suites.bookstore.ApiTest.readOnlyId()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Started= readOnlyId]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="readOnlyId()[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="readOnlyId" duration-ms="173" started-at="2019-03-10T18:38:00Z" description="Try to send ID" finished-at="2019-03-10T18:38:00Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Service Response:]]>
+            </line>
+            <line>
+              <![CDATA[{"id":0,"author":null,"title":null,"error":"id field is readonly"}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- readOnlyId -->
+        <test-method status="PASS" signature="afterTest(java.lang.reflect.Method)[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="afterTest" is-config="true" duration-ms="1" started-at="2019-03-10T18:38:00Z" finished-at="2019-03-10T18:38:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void suites.bookstore.ApiTest.readOnlyId()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Completed= readOnlyId
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-03-10T18:38:00Z" finished-at="2019-03-10T18:38:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void suites.bookstore.ApiTest.putbooksDuplicate()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Started= putbooksDuplicate]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="putbooksDuplicate()[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="putbooksDuplicate" duration-ms="380" started-at="2019-03-10T18:38:00Z" description="Try to put book duplicate" finished-at="2019-03-10T18:38:01Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Service Response:]]>
+            </line>
+            <line>
+              <![CDATA[{"id":0,"author":null,"title":null,"error":"Another book with similar title and author already exists"}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- putbooksDuplicate -->
+        <test-method status="PASS" signature="afterTest(java.lang.reflect.Method)[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="afterTest" is-config="true" duration-ms="1" started-at="2019-03-10T18:38:01Z" finished-at="2019-03-10T18:38:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void suites.bookstore.ApiTest.putbooksDuplicate()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Completed= putbooksDuplicate
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="beforeTest" is-config="true" duration-ms="5" started-at="2019-03-10T18:38:01Z" finished-at="2019-03-10T18:38:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void suites.bookstore.ApiTest.getBookNotFound()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Started= getBookNotFound]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="getBookNotFound()[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="getBookNotFound" duration-ms="352" started-at="2019-03-10T18:38:01Z" description="get book that not exist" finished-at="2019-03-10T18:38:01Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Service Response:]]>
+            </line>
+            <line>
+              <![CDATA[{"id":0,"author":null,"title":null,"error":"the given id does not exist."}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getBookNotFound -->
+        <test-method status="PASS" signature="afterTest(java.lang.reflect.Method)[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="afterTest" is-config="true" duration-ms="1" started-at="2019-03-10T18:38:01Z" finished-at="2019-03-10T18:38:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void suites.bookstore.ApiTest.getBookNotFound()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Completed= getBookNotFound
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="getBookFound()[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="getBookFound" duration-ms="456" started-at="2019-03-10T18:38:01Z" description="get book that exist" finished-at="2019-03-10T18:38:02Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Service Response:]]>
+            </line>
+            <line>
+              <![CDATA[{"id":59,"author":"Asiye Ulusoy","title":"DevOps is a lie"}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getBookFound -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-03-10T18:38:01Z" finished-at="2019-03-10T18:38:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void suites.bookstore.ApiTest.getBookFound()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Started= getBookFound]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="afterTest(java.lang.reflect.Method)[pri:0, instance:suites.bookstore.ApiTest@204f30ec]" name="afterTest" is-config="true" duration-ms="1" started-at="2019-03-10T18:38:02Z" finished-at="2019-03-10T18:38:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void suites.bookstore.ApiTest.getBookFound()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Completed= getBookFound
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- suites.bookstore.ApiTest -->
+    </test> <!-- BookStore Api Testing -->
+  </suite> <!-- BookStore Api Testing -->
+</testng-results>

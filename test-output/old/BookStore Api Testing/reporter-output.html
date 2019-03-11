@@ -1,0 +1,49 @@
+<h2>Reporter output</h2><table><tr><td>Test Started with runID= 4307745</td></tr>
+<tr><td>Set Up completed 
+</td></tr>
+<tr><td>Test Started= emptyStore</td></tr>
+<tr><td>Service Response:</td></tr>
+<tr><td>[]</td></tr>
+<tr><td>Test Completed= emptyStore
+</td></tr>
+<tr><td>Test Started= requiredFieldTitle</td></tr>
+<tr><td>Service Response:</td></tr>
+<tr><td>{"id":0,"author":null,"title":null,"error":"title and author are required fields"}</td></tr>
+<tr><td>Test Completed= requiredFieldTitle
+</td></tr>
+<tr><td>Test Started= requiredFieldAuthor</td></tr>
+<tr><td>Service Response:</td></tr>
+<tr><td>{"id":0,"author":null,"title":null,"error":"title and author are required fields"}</td></tr>
+<tr><td>Test Completed= requiredFieldAuthor
+</td></tr>
+<tr><td>Test Started= emptyAuthorFields</td></tr>
+<tr><td>Service Response:</td></tr>
+<tr><td>{"id":0,"author":null,"title":null,"error":"title and author fields cannot be empty"}</td></tr>
+<tr><td>Test Completed= emptyAuthorFields
+</td></tr>
+<tr><td>Test Started= emptyTitleFields</td></tr>
+<tr><td>Service Response:</td></tr>
+<tr><td>{"id":0,"author":null,"title":null,"error":"title and author fields cannot be empty"}</td></tr>
+<tr><td>Test Completed= emptyTitleFields
+</td></tr>
+<tr><td>Test Started= readOnlyId</td></tr>
+<tr><td>Service Response:</td></tr>
+<tr><td>{"id":0,"author":null,"title":null,"error":"id field is readonly"}</td></tr>
+<tr><td>Test Completed= readOnlyId
+</td></tr>
+<tr><td>Test Started= putbooksDuplicate</td></tr>
+<tr><td>Service Response:</td></tr>
+<tr><td>{"id":0,"author":null,"title":null,"error":"Another book with similar title and author already exists"}</td></tr>
+<tr><td>Test Completed= putbooksDuplicate
+</td></tr>
+<tr><td>Test Started= getBookNotFound</td></tr>
+<tr><td>Service Response:</td></tr>
+<tr><td>{"id":0,"author":null,"title":null,"error":"the given id does not exist."}</td></tr>
+<tr><td>Test Completed= getBookNotFound
+</td></tr>
+<tr><td>Test Started= getBookFound</td></tr>
+<tr><td>Service Response:</td></tr>
+<tr><td>{"id":59,"author":"Asiye Ulusoy","title":"DevOps is a lie"}</td></tr>
+<tr><td>Test Completed= getBookFound
+</td></tr>
+</table>

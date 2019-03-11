@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="suites.bookstore.ApiTest">
+        <methods>
+          <include name="getBookNotFound"/>
+          <include name="afterTest"/>
+          <include name="emptyStore"/>
+          <include name="emptyTitleFields"/>
+          <include name="requiredFieldTitle"/>
+          <include name="emptyAuthorFields"/>
+          <include name="beforeClass"/>
+          <include name="beforeTest"/>
+          <include name="setUp"/>
+          <include name="getBookFound"/>
+          <include name="readOnlyId"/>
+          <include name="putbooksDuplicate"/>
+          <include name="requiredFieldAuthor"/>
+        </methods>
+      </class> <!-- suites.bookstore.ApiTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

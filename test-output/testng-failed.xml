@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [BookStore Api Testing]">
+  <parameter name="BaseURI" value="http://165.227.145.174:8081/"/>
+  <test thread-count="5" name="BookStore Api Testing(failed)">
+    <classes>
+      <class name="suites.bookstore.ApiTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="emptyStore"/>
+          <include name="beforeClass"/>
+          <include name="beforeTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- suites.bookstore.ApiTest -->
+    </classes>
+  </test> <!-- BookStore Api Testing(failed) -->
+</suite> <!-- Failed suite [BookStore Api Testing] -->
